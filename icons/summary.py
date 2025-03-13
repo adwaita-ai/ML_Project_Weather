@@ -65,8 +65,13 @@ def show_summary():
           - **KNN, BernoulliNB, Decision Tree, Random Forest, XGBoost, CatBoost, LGBM, AdaBoost**.
         - Since this dataset is highly **imbalanced**, used **Recall** as the primary evaluation metric.
         - **Performed SMOTE** to balance the dataset.
-        - Achieved best performance with **XGBoostClassifier**:
-          - **Recall for 'No' class:** 0.9079
-          - **Recall for 'Yes' class:** 0.8652
+        
+        - **Achieved best performance with XGBoostClassifier**:
+          - ✅ **Recall for 'No' class:** `0.9079`
+          - ✅ **Recall for 'Yes' class:** `0.8652`
+        
+        - **Performance of RandomForestClassifier**:
+          - 🔹 **Recall for 'No' class:** `0.8392`
+          - 🔹 **Recall for 'Yes' class:** `0.8283`
         """
     )
