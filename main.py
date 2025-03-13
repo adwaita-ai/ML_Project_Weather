@@ -97,7 +97,7 @@ if st.session_state.page == "Home":
     ##  **Project Overview** 
     This application helps predict **whether it will rain tomorrow** using historical weather data 
     from **2007 to 2017**.
-    ###  **How It Works**
+    ###  **What You Can Do**
     - 📊 **Explore Dataset:** View the dataset used for training. 
     - 📈 **Visualize Data:** Analyze rainfall trends & patterns. 
     - 🤖 **Predict Rainfall:** Input weather details and get AI predictions. 
