@@ -3,6 +3,18 @@ import pandas as pd
 import streamlit as st
 import joblib
 
+import gdown
+import os
+file_id = '152PyisZggi2W5xum38LNTHapCK59CI6Z'
+url = f'https://drive.google.com/uc?id={file_id}'
+output_path = 'pictures_model/encoded_df.pkl'
+if not os.path.exists(output_path):
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)  # Ensure directory exists
+    gdown.download(url, output_path, quiet=False)
+    print(f"✅ File downloaded to: {os.path.abspath(output_path)}")
+else:
+    print(f"⚠️ File already exists at: {os.path.abspath(output_path)} - Skipping download.")
+
 
 scaler = joblib.load("D:/ML_PROJECT/pictures_model/scaler.pkl")
 encoded_mappings = joblib.load("D:/ML_PROJECT/pictures_model/encoded_df.pkl")
