@@ -8,8 +8,8 @@ def evaluate_model():
 
     # ✅ Define model paths
     model_paths = {
-        "Random Forest": r"D:\ML_PROJECT\pictures_model\RandomForestModel.pkl",
-        "XGBoost": r"D:\ML_PROJECT\pictures_model\XGBoostModel.pkl"
+        "Random Forest": r"pictures_model/RandomForestModel.pkl",
+        "XGBoost": r"pictures_model/XGBoostModel.pkl"
     }
 
     # ✅ Select a model to evaluate
