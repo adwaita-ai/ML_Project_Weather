@@ -58,7 +58,7 @@ from icons.summary import show_summary  # ✅ New Summary Page Import
 
 
 # ✅ Load Model
-model_path = "D:\ML_PROJECT\pictures_model\RandomForestModel.pkl"
+model_path = "pictures_model/RandomForestModel.pkl"
 if os.path.exists(model_path):
     model = joblib.load(model_path)
 else:
@@ -66,21 +66,21 @@ else:
 
 # ✅ Load Scaler
 
-scaler_path = "D:/ML_PROJECT/pictures_model/scaler.pkl"
+scaler_path = "pictures_model/scaler.pkl"
 if os.path.exists(scaler_path):
     scaler = joblib.load(scaler_path)
 else:
     st.error("⚠️ Scaler file not found. Please check the path.")
 
 # ✅ Load Encoded Features
-encoded_mappings_path = r"D:\ML_PROJECT\pictures_model\encoded_df.pkl"
+encoded_mappings_path = r"pictures_model/encoded_df.pkl"
 if os.path.exists(encoded_mappings_path):
     encoded_mappings = joblib.load(encoded_mappings_path)
 else:
     st.error("⚠️ Encoded mappings file not found. Please check the path.")
 
 # ✅ Load Dataset (df) for Taking User Input
-df_path = "D:/ML_PROJECT/pictures_model/weatherAUS.csv"
+df_path = "pictures_model/weatherAUS.csv"
 if os.path.exists(df_path):
     df = pd.read_csv(df_path)
 else:
