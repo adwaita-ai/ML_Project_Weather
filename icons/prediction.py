@@ -4,26 +4,6 @@ import streamlit as st
 import joblib
 
 
-<<<<<<< HEAD
-import gdown
-import os
-file_id = '152PyisZggi2W5xum38LNTHapCK59CI6Z'
-url = f'https://drive.google.com/uc?id={file_id}'
-output_path = 'pictures_model/encoded_df.pkl'
-gdown.download(url, output_path, quiet=False)
-print(f"File downloaded to: {os.path.abspath(output_path)}")
-=======
-# import gdown
-# import os
-# file_id = '152PyisZggi2W5xum38LNTHapCK59CI6Z'
-# url = f'https://drive.google.com/uc?id={file_id}'
-# output_path = 'pictures_model/encoded_df.pkl'
-# gdown.download(url, output_path, quiet=False)
-# print(f"File downloaded to: {os.path.abspath(output_path)}")
->>>>>>> 09b8994 (first commit)
-
-
-
 scaler = joblib.load("D:/ML_PROJECT/pictures_model/scaler.pkl")
 encoded_mappings = joblib.load("D:/ML_PROJECT/pictures_model/encoded_df.pkl")
 rf_model_data = joblib.load("D:/ML_PROJECT/pictures_model/RandomForestModel.pkl")
