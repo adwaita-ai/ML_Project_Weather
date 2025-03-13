@@ -56,14 +56,6 @@ from icons.prediction import get_user_input_and_predict
 from icons.eval import evaluate_model  
 from icons.summary import show_summary  # ✅ New Summary Page Import
 
-import gdown
-import os
-file_id = '152PyisZggi2W5xum38LNTHapCK59CI6Z'
-url = f'https://drive.google.com/uc?id={file_id}'
-output_path = 'pictures_model/encoded_df.pkl'
-gdown.download(url, output_path, quiet=False)
-print(f"File downloaded to: {os.path.abspath(output_path)}")
-
 
 # ✅ Load Model
 model_path = "D:\ML_PROJECT\pictures_model\RandomForestModel.pkl"
