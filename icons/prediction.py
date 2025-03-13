@@ -16,9 +16,9 @@ else:
     print(f"⚠️ File already exists at: {os.path.abspath(output_path)} - Skipping download.")
 
 
-scaler = joblib.load("D:/ML_PROJECT/pictures_model/scaler.pkl")
-encoded_mappings = joblib.load("D:/ML_PROJECT/pictures_model/encoded_df.pkl")
-rf_model_data = joblib.load("D:/ML_PROJECT/pictures_model/RandomForestModel.pkl")
+scaler = joblib.load("pictures_model/scaler.pkl")
+encoded_mappings = joblib.load("pictures_model/encoded_df.pkl")
+rf_model_data = joblib.load("pictures_model/RandomForestModel.pkl")
 rf_model = rf_model_data["model"]
 
 def get_user_input_and_predict(df):
